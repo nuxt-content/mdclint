@@ -1,0 +1,20 @@
+diff --git a/lib/micromark-parse.mjs b/lib/micromark-parse.mjs
+index d848f5d1dd8ecdebca6e4e91e33a7fd5e0ffabe3..32fef1a662862d362a678542e9c0ac4320a3a0f7 100644
+--- a/lib/micromark-parse.mjs
++++ b/lib/micromark-parse.mjs
+@@ -11,6 +11,7 @@ import { parse as micromarkParse, postprocess as micromarkPostprocess, preproces
+ import { labelEnd } from "micromark-core-commonmark";
+ import { isHtmlFlowComment } from "../helpers/micromark-helpers.cjs";
+ import { flatTokensSymbol, htmlFlowSymbol, newLineRe } from "../helpers/shared.cjs";
++import { micromarkExtension } from "remark-mdc";
+ 
+ /** @typedef {import("micromark-util-types").Event} Event */
+ /** @typedef {import("micromark-util-types").ParseOptions} MicromarkParseOptions */
+@@ -45,6 +46,7 @@ export function getEvents(
+     gfmFootnote(),
+     gfmTable(),
+     math(),
++    micromarkExtension(),
+     ...(micromarkParseOptions.extensions || [])
+   ];
+ 

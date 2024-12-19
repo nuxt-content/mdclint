@@ -1,0 +1,66 @@
+{
+  "name": "mdclint",
+  "version": "0.0.1",
+  "description": "Markdown Linting",
+  "main": "dist/index.mjs",
+  "type": "module",
+  "types": "./types.d.ts",
+  "bin": {
+    "mdclint": "./bin/mdclint.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./types.d.ts",
+      "default": "./dist/index.mjs"
+    },
+    "./cli": "./dist/cli.mjs"
+  },
+  "scripts": {
+    "prepack": "unbuild",
+    "lint": "eslint .",
+    "release": "release-it"
+  },
+  "files": [
+    "dist",
+    "types.d.ts"
+  ],
+  "unbuild": {
+    "rollup": {
+      "inlineDependencies": true
+    }
+  },
+  "keywords": [
+    "markdownlint",
+    "eslint",
+    "mdclint",
+    "mdc",
+    "markdownlint-cli",
+    "eslint-plugin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "c12": "^2.0.1",
+    "citty": "^0.1.6",
+    "glob": "^11.0.0",
+    "remark-mdc": "npm:remark-mdc-edge@latest"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "markdownlint": "patches/markdownlint.patch"
+    }
+  },
+  "peerDependencies": {
+    "eslint": "^8.57.0 || ^9.0.0"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.7.3",
+    "@types/node": "^22.10.2",
+    "eslint": "^9.17.0",
+    "eslint-flat-config-utils": "^0.4.0",
+    "markdownlint": "^0.37.1",
+    "mdclint": "workspace:*",
+    "release-it": "^17.10.0",
+    "unbuild": "^3.0.1"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "mdclint",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Markdown Linting",
   "main": "dist/index.mjs",
   "type": "module",

@@ -60,7 +60,7 @@
     "eslint-flat-config-utils": "^0.4.0",
     "markdownlint": "^0.37.1",
     "mdclint": "workspace:*",
-    "release-it": "^17.10.0",
+    "release-it": "^18.1.2",
     "unbuild": "^3.0.1"
   }
 }

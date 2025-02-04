@@ -57,7 +57,7 @@
     "@nuxt/eslint-config": "^0.7.3",
     "@types/node": "^22.10.2",
     "eslint": "^9.17.0",
-    "eslint-flat-config-utils": "^0.4.0",
+    "eslint-flat-config-utils": "^2.0.1",
     "markdownlint": "^0.37.1",
     "mdclint": "workspace:*",
     "release-it": "^17.10.0",

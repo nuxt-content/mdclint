@@ -42,7 +42,7 @@
   "dependencies": {
     "c12": "^3.0.3",
     "citty": "^0.1.6",
-    "glob": "^11.0.1",
+    "glob": "^13.0.0",
     "remark-mdc": "npm:remark-mdc-edge@latest"
   },
   "pnpm": {

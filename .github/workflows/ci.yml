@@ -19,7 +19,7 @@ jobs:
           node-version: '22'
       - run: npm i -g --force corepack && corepack enable
       - run: pnpm install
-      - run: pnpm lint
       - run: pnpm prepack
+      - run: pnpm lint
       - name: Publish
         run: pnpx pkg-pr-new publish --compact --no-template --pnpm

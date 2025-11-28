@@ -48,7 +48,7 @@
     "c12": "^3.3.2",
     "citty": "^0.1.6",
     "glob": "^13.0.0",
-    "remark-mdc": "https://pkg.pr.new/remark-mdc@597e125"
+    "remark-mdc": "^3.9.0"
   },
   "pnpm": {
     "patchedDependencies": {
@@ -59,7 +59,7 @@
     "eslint": "^8.57.0 || ^9.0.0"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^1.10.0",
+    "@nuxt/eslint-config": "^1.11.0",
     "@types/node": "^24.10.1",
     "eslint": "^9.39.1",
     "eslint-flat-config-utils": "^2.1.4",
@@ -68,5 +68,5 @@
     "release-it": "^19.0.6",
     "unbuild": "^3.6.1"
   },
-  "packageManager": "pnpm@10.23.0"
+  "packageManager": "pnpm@10.24.0"
 }

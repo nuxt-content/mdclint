@@ -12,6 +12,10 @@ patchedDependencies:
 importers:
 
   .:
+    dependencies:
+      citty:
+        specifier: ^0.1.6
+        version: 0.1.6
     devDependencies:
       '@nuxt/eslint-config':
         specifier: ^1.12.1
@@ -22,9 +26,6 @@ importers:
       c12:
         specifier: ^3.3.2
         version: 3.3.2
-      citty:
-        specifier: ^0.1.6
-        version: 0.1.6
       eslint:
         specifier: ^9.39.1
         version: 9.39.1(jiti@2.6.1)

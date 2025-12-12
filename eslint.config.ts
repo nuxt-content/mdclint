@@ -4,5 +4,10 @@ import { mdcLint } from './src/index.ts'
 
 export default createConfigForNuxt({})
   .append(mdcLint({
-    files: ['content/**/*.md']
+    files: ['**/*.md'],
+    config: {
+      MD013: {
+        line_length: 120,
+      },
+    },
   }))

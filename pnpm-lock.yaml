@@ -45,8 +45,8 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(@types/node@25.0.0)
       remark-mdc:
-        specifier: ^3.9.0
-        version: 3.9.0
+        specifier: https://pkg.pr.new/remark-mdc@305e886
+        version: https://pkg.pr.new/remark-mdc@305e886
       unbuild:
         specifier: ^3.6.1
         version: 3.6.1(typescript@5.9.3)
@@ -2346,8 +2346,9 @@ packages:
     engines: {node: ^20.12.0 || >=22.0.0}
     hasBin: true
 
-  remark-mdc@3.9.0:
-    resolution: {integrity: sha512-hRbVWknG8V6HCfWz+YHUQaNey6AchYIi0jheYTUk9Y2XcMrc7ON5uVQOIhnBVQg2zKFm6bIlx4JoETUMM0Pq3g==}
+  remark-mdc@https://pkg.pr.new/remark-mdc@305e886:
+    resolution: {tarball: https://pkg.pr.new/remark-mdc@305e886}
+    version: 3.9.0
 
   reserved-identifiers@1.2.0:
     resolution: {integrity: sha512-yE7KUfFvaBFzGPs5H3Ops1RevfUEsDc5Iz65rOwWg4lE8HJSYtle77uul3+573457oHvBKuHYDl/xqUkKpEEdw==}
@@ -2658,8 +2659,8 @@ packages:
     resolution: {integrity: sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw==}
     engines: {node: '>=12'}
 
-  yaml@2.8.1:
-    resolution: {integrity: sha512-lcYcMxX2PO9XMGvAJkJ3OsNMw+/7FKes7/hgerGUYWIoWu5j/+YQqcZr5JnPZWzOsEBgMbSbiSTn/dv/69Mkpw==}
+  yaml@2.8.2:
+    resolution: {integrity: sha512-mplynKqc1C2hTVYxd0PU2xQAc22TI1vShAYGksCCfxbn/dFwnHTNi1bvYsBTkhdUNtGIf5xNOg938rrSSYvS9A==}
     engines: {node: '>= 14.6'}
     hasBin: true
 
@@ -5077,7 +5078,7 @@ snapshots:
       - magicast
       - supports-color
 
-  remark-mdc@3.9.0:
+  remark-mdc@https://pkg.pr.new/remark-mdc@305e886:
     dependencies:
       '@types/mdast': 4.0.4
       '@types/unist': 3.0.3
@@ -5096,7 +5097,7 @@ snapshots:
       unified: 11.0.5
       unist-util-visit: 5.0.0
       unist-util-visit-parents: 6.0.2
-      yaml: 2.8.1
+      yaml: 2.8.2
     transitivePeerDependencies:
       - supports-color
 
@@ -5465,7 +5466,7 @@ snapshots:
 
   xml-name-validator@4.0.0: {}
 
-  yaml@2.8.1: {}
+  yaml@2.8.2: {}
 
   yargs-parser@21.1.1: {}
 

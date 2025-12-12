@@ -62,7 +62,7 @@
     "markdownlint": "^0.40.0",
     "mdclint": "workspace:*",
     "release-it": "^19.1.0",
-    "remark-mdc": "^3.9.0",
+    "remark-mdc": "https://pkg.pr.new/remark-mdc@305e886",
     "unbuild": "^3.6.1",
     "c12": "^3.3.2",
     "glob": "^13.0.0"

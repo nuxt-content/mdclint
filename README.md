@@ -41,7 +41,7 @@ The CLI:
 - Accepts files or glob patterns and expands directories automatically.
 - Loads the first `.markdownlint.*` config it finds in the project root; if none exists,
 it uses a default config that disables some noisy markdownlint rules (e.g. `MD041`,
-table line length) and enables MDC-specific rules (`MDC007`, `MDC018`, `MDC022`,
+line length checks via `MD013`) and enables MDC-specific rules (`MDC007`, `MDC018`, `MDC022`,
 `MDC023`, `MDC031`, `MDC032`, `MDC034`, `MDC058`).
 
 Examples:
@@ -67,7 +67,7 @@ export default createConfigForNuxt({})
   .append(await mdcLint({
     files: ['content/**/*.md'],      // defaults to ['**/*.md']
     preset: 'mdc',                   // or 'markdown'
-    config: { MD013: { line_length: 100 } } // optional markdownlint overrides
+    config: { md013: { line_length: 100 } } // optional markdownlint overrides
   }))
 ```
 
@@ -82,7 +82,7 @@ What the plugin provides:
 
 - MDC Lint will load the first `.markdownlint.*` file in your project root (`.yaml`, `.yml`, `.json`, `.js`, `.cjs`, etc.).
 - Built-in defaults loosen some markdownlint rules for content sites (e.g. allow
-missing top-level header, ignore table line length) and add MDC-specific checks.
+missing “first line is a top-level heading” requirement (`MD041`), loosen line length checks (`MD013`), and add MDC-specific checks).
 Override any rule in your config or via the plugin’s `config` option.
 - Use `preset: 'markdown'` (CLI flag or plugin option) to lint plain Markdown without MDC custom rules.
 

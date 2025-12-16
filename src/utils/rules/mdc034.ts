@@ -37,7 +37,7 @@ const MDC034: Rule = {
         },
         (token: MicromarkToken) => {
           // Ignore yaml data section
-          if (token.type === 'componentContainerDataSection') {
+          if ((token.type as string) === "componentContainerDataSection") {
             return []
           }
           // Ignore content of inline HTML tags

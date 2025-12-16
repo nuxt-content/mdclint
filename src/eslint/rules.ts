@@ -24,7 +24,7 @@ export const rules: Record<string, RuleDefinition> = {
   },
   MD005: {
     name: "md005",
-    description: "Code block style",
+    description: "Inconsistent indentation for list items at the same level",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md005",
   },
   MD007: {
@@ -47,48 +47,48 @@ export const rules: Record<string, RuleDefinition> = {
   },
   MD011: {
     name: "md011",
-    description: "Line length",
+    description: "Reversed link syntax",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md011", 
     fixable: "code",
   },
   MD012: {
     name: "md012",
-    description: "Multiple top-level headings in the same document",
+    description: "Multiple consecutive blank lines",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md012",
     fixable: "whitespace",
   },
   MD013: {
     name: "md013",
-    description: "Multiple blank lines",
+    description: "Line length",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md013",
   },
   MD014: {
     name: "md014",
-    description: "No empty sections",
+    description: "Dollar signs used before commands without showing output",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md014",
     fixable: "code",
   },
   MD018: {
     name: "md018",
-    description: "No space after hash",
+    description: "No space after hash on atx style heading",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md018",
     fixable: "whitespace",
   },
   MD019: {
     name: "md019",
-    description: "No space after hash",
+    description: "Multiple spaces after hash on atx style heading",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md019",
     fixable: "whitespace",
   },
   MD020: {
     name: "md020",
-    description: "No space after hash",
+    description: "No space inside hashes on closed atx style heading",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md020",
     fixable: "whitespace",
   },
   MD021: {
     name: "md021",
-    description: "Multiple headings with the same content",
+    description: "Multiple spaces inside hashes on closed atx style heading",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md021",
     fixable: "whitespace",
   },
@@ -100,7 +100,7 @@ export const rules: Record<string, RuleDefinition> = {
   },
   MD023: {
     name: "md023",
-    description: "Headings should be surrounded by blank lines",
+    description: "Headings must start at the beginning of the line",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md023",
     fixable: "whitespace",
   },
@@ -116,7 +116,7 @@ export const rules: Record<string, RuleDefinition> = {
   },
   MD026: {
     name: "md026",
-    description: "Trailing punctuation in header",
+    description: "Trailing punctuation in heading",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md026",
     fixable: "code",
   },
@@ -128,7 +128,7 @@ export const rules: Record<string, RuleDefinition> = {
   },
   MD028: {
     name: "md028",
-    description: "Multiple spaces after blockquote symbol",
+    description: "Blank line inside blockquote",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md028",
   },
   MD029: {
@@ -161,18 +161,18 @@ export const rules: Record<string, RuleDefinition> = {
   },
   MD034: {
     name: "md034",
-    description: "Spaces inside code span elements",
+    description: "Bare URL used",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md034",
     fixable: "code",
   },
   MD035: {
     name: "md035",
-    description: "Spaces inside code span elements",
+    description: "Horizontal rule style",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md035", 
   },
   MD036: {
     name: "md036",
-    description: "Spaces inside emphasis markers",
+    description: "Emphasis used instead of a heading",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md036",
   },
   MD037: {
@@ -183,72 +183,72 @@ export const rules: Record<string, RuleDefinition> = {
   },
   MD038: {
     name: "md038",
-    description: "Spaces inside emphasis markers",
+    description: "Spaces inside code span elements",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md038",
     fixable: "code",
   },
   MD039: {
     name: "md039",
-    description: "Spaces inside emphasis markers",
+    description: "Spaces inside link text",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md039",
     fixable: "code",
   },
   MD040: {
     name: "md040",
-    description: "Spaces inside emphasis markers",
+    description: "Fenced code blocks should have a language specified",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md040",
   },
   MD041: {
     name: "md041",
-    description: "First line in file should be a top level heading",
+    description: "First line in a file should be a top-level heading",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md041", 
   },
   MD042: {
     name: "md042",
-    description: "First line in file should be a top level heading",
+    description: "No empty links",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md042",
   },
   MD043: {
     name: "md043",
-    description: "First line in file should be a top level heading",
+    description: "Required heading structure",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md043",
   },
   MD044: {
     name: "md044",
-    description: "MD044",
+    description: "Proper names should have the correct capitalization",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md044",
     fixable: "code",
   },
   MD045: {
     name: "md045",
-    description: "MD045",
+    description: "Images should have alternate text (alt text)",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md045",
   },
   MD046: {
     name: "md046",
-    description: "MD046",
+    description: "Code block style",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md046",
   },
   MD047: {
     name: "md047",
-    description: "MD047",
+    description: "Files should end with a single newline character",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md047",
     fixable: "whitespace",
   },
   MD048: {
     name: "md048",
-    description: "MD048",
+    description: "Code fence style",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md048",
   },
   MD049: {
     name: "md049",
-    description: "MD049",
+    description: "Emphasis style",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md049",
     fixable: "code",
   },
   MD050: {
     name: "md050",
-    description: "MD050",
+    description: "Strong style",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md050",
     fixable: "code",
   },
@@ -274,7 +274,7 @@ export const rules: Record<string, RuleDefinition> = {
   },
   MD055: {
     name: "md055",
-    description: "Link and image style",
+    description: "Table pipe style",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md055",
   },
   MD056: {
@@ -306,7 +306,7 @@ export const rules: Record<string, RuleDefinition> = {
   },
   MDC018: {
     name: "mdc018",
-    description: "No space after hash",
+    description: "No space after hash on atx style heading",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md018",
     fixable: "whitespace",
   },
@@ -318,7 +318,7 @@ export const rules: Record<string, RuleDefinition> = {
   },
   MDC023: {
     name: "mdc023",
-    description: "Headings should be surrounded by blank lines",
+    description: "Headings must start at the beginning of the line",
     url: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md023",
     fixable: "whitespace",
   },

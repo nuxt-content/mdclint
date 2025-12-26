@@ -56,16 +56,16 @@
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^1.12.1",
-    "@types/node": "^25.0.2",
+    "@types/node": "^25.0.3",
     "eslint": "^9.39.2",
     "eslint-flat-config-utils": "^2.1.4",
     "markdownlint": "^0.40.0",
     "mdclint": "workspace:*",
-    "release-it": "^19.1.0",
+    "release-it": "^19.2.2",
     "remark-mdc": "https://pkg.pr.new/remark-mdc@305e886",
     "unbuild": "^3.6.1",
-    "c12": "^3.3.2",
+    "c12": "^3.3.3",
     "glob": "^13.0.0"
   },
-  "packageManager": "pnpm@10.26.0"
+  "packageManager": "pnpm@10.26.2"
 }

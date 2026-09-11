@@ -67,5 +67,5 @@
     "c12": "^3.3.2",
     "glob": "^13.0.0"
   },
-  "packageManager": "pnpm@10.26.0"
+  "packageManager": "pnpm@12.4.1"
 }
